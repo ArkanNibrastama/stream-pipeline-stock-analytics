@@ -2,7 +2,7 @@ import json
 import requests
 from random import randint
 from datetime import datetime
-from credentials import API_KEY
+from credentials import *
 
 def initialization():
 
@@ -16,7 +16,7 @@ def initialization():
 
 def get_data(emiten_list):
 
-    time = datetime.now().strftime("%Y-%m-%d %H:%M:%S") + " WIB"
+    time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     emiten = emiten_list[randint(0, len(emiten_list)-1)]
     price = randint(50, 2000)
 
