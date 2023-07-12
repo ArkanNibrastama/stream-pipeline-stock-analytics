@@ -1,6 +1,5 @@
 from kafka import KafkaConsumer
 import json
-import s3fs
 import boto3
 from credentials import *
 
